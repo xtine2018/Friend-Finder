@@ -1,12 +1,12 @@
 @font-face {
     font-family: "friend";
-    src: url('/Users/cnyokoyama/Documents/UCLA/Homework/Friend-Finder/app/css/LOVES.ttf');
-}
-
-@font-face {
+    src: url("LOVES.ttf");
+  }
+  
+  @font-face {
     font-family: "title";
-    src: url('/Users/cnyokoyama/Documents/UCLA/Homework/Friend-Finder/app/css/Badtaste Demo.ttf');
-}
+    src: url("Badtaste Demo.ttf");
+  }
 
 .nav-wrapper {
     background-color: black;

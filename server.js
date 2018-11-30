@@ -11,7 +11,7 @@ var router = express.Router();
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname + './css/style.css')));
+app.use(express.static(path.join(__dirname + "/app/public")));
 
 
 // require(path.join(__dirname, './app/routing/apiRoutes'))(app);
