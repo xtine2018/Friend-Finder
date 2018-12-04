@@ -1,22 +1,224 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+       <!-- css stylesheet -->
+       <link rel="stylesheet" href="./css/style1.css"/>
+  
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">     
+   
+
 </head>
+
 <body>
-           <input id="userInputWidth" type="number" name="Width" placeholder="Enter Width Here" value="">
-           <br>
-           <br>
-           <select id="selectThickness" type="number" name="Thickness" form="ThicknessForm">
-               <option value=1>1</option>
-               <option value=2>2</option>
-               <option value=3>3</option>
-               <option value=4>4</option>
-               <option value=5>5</option>
+    <nav>
+        <div class="nav-wrapper">  
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">API Friends List</a></li>
+            <li><a href="https://github.com/christinenia/Friend-Finder">Github Repo</a></li>
+          </ul>
+        </div>
+      </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+  <h1>Let's Talk About You...</h1>
+  <br>
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="" id="name" type="text" class="validate">
+                  <label for="name" id = "title">Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input placeholder="" type="text" class="validate">
+                  <label for="picture" id="title">Link to Photo Image</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="" type="email" class="validate">
+                  <label for="email" id = "title">Email</label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+      <hr>
+      <br>
+
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <label id="questions">Your mind is always buzzing with unexplored ideas and plans.</label>
+      </div>
+
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <label id="questions">Generally speaking, you rely more on your experience than your imagination.</label>
+      </div>
+
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <label id="questions">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+      </div>
+
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <label id = "questions">You rarely do something just out of sheer curiosity.</label>
+      </div>
+
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <label id ="questions">People can rarely upset you.</label>
+      </div>
+
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <label id="questions">It is often difficult for you to relate to other people’s feelings.</label>
+      </div>
+
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <label id ="questions">In a discussion, truth should be more important than people’s sensitivities.</label>
+      </div>
+
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <label id="questions">You rarely get carried away by fantasies and ideas.</label>
+      </div>
+
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <label id="questions">You think that everyone’s views should be respected.</label>
+      </div>
+
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>...</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+        <label id="questions">You feel more energetic after spending time with a group of people.</label>
+      </div>
 
 
-           </select>
+      
+
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      var newCharacter = {
+        name: $("#name").val().trim(),
+        role: $("#role").val().trim(),
+        age: $("#age").val().trim(),
+        forcePoints: $("#force-points").val().trim()
+      };
+
+      // Question: What does this code do??
+      $.post("/api/characters", newCharacter)
+        .then(function(data) {
+          console.log("add.html", data);
+          alert("Adding character...");
+        });
+    });
+    $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+   $(document).ready(function() {
+    M.updateTextFields();
+  });
+
+  </script>
+
+
+
 </body>
 </html>

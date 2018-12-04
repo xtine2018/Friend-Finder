@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "friend";
+    src: url("LOVES.ttf");
+  }
+  
+  @font-face {
+    font-family: "title";
+    src: url("Badtaste Demo.ttf");
+  }
+
+.nav-wrapper {
+    background-color: black;
+    padding: 1em 2em 5em 2em;
+    font-family: friend;
+}
+
+.jumbotron {
+    font-family: friend;
+    background-color: turquoise;
+    margin-top: 8em;
+    padding: 2em 2em 10em 2em;
+}
+
+a, a:link, a:visited, a:active {
+    font-family: friend;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+a:hover { 
+    color: turquoise;
+}
+
+.btn-danger {
+    background-color: white;
+    color: black;
+    padding: 0em 1em 3em 1em;
+    font-weight: 900;
+}
+
+h3 {
+    font-family: title;
+    font-size: 10em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.label {
+    font-family: friend;
+}
+
+#name {
+    color: black;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: title;
+}
+
+#title {
+    color: black;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-family: title;
+    font-weight: 900;
+    text-align: center;
+}
+
+#questions {
+    color: black;
+    font-size: 1.5em;
+}
+
+.options {
+    font-size: 23em;
+}
