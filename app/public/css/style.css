@@ -3,9 +3,10 @@
     src: url("Game\ of\ Thrones.ttf");
 }
   
-  body {
+body {
     background: url("wallpaper.jpg") no-repeat center center fixed;
   }
+  
 .nav-wrapper {
     background-color: black;
     padding: 1em 2em 5em 2em;
