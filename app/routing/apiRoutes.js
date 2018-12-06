@@ -1,33 +1,36 @@
-
-var friendsData = require("../data/friends");
+var path = require('path');
+var friends = require('../data/friends.js');
 
 module.exports = function(app) {
+	app.get('/api/friends', function(req, res) {
+		res.json(friends);
+	});
 
-  app.get("/api/friends", function(req, res) {
-    res.json(friendsData);
-  });
+	app.post('/api/friends', function(req, res) {
+		var userInput = req.body;
+		var userResponses = userInput.scores;
+		var matchName = '';
+		var matchImage = '';
+		var totalDifference = 10000;
 
-  app.post("/api/friends", function(req, res) {
 
-    if (tableData.length < 5) {
-      tableData.push(req.body);
-      res.json(true);
-    }
-    else {
-      waitListData.push(req.body);
-      res.json(false);
-    }
-  });
+		for (var i = 0; i < friends.length; i++) {
+			var diff = 0;
+			for (var j = 0; j < userResponses.length; j++) {
+				diff += Math.abs(friends[i].scores[j] - userResponses[j]);
+			}
 
-  // ---------------------------------------------------------------------------
-  // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
+			if (diff < totalDifference) {
 
-  app.post("/api/clear", function(req, res) {
-    // Empty out the arrays of data
-    tableData.length = [];
-    waitListData.length = [];
 
-    res.json({ ok: true });
-  });
+				totalDifference = diff;
+				matchName = friends[i].name;
+				matchImage = friends[i].photo;
+			}
+		}
+
+		friends.push(userInput);
+
+		res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
+	});
 };

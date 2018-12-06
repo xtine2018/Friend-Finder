@@ -18,7 +18,7 @@
     font-family: friend;
     background-color: turquoise;
     margin-top: 8em;
-    padding: 2em 2em 10em 2em;
+    padding: 2em 2em 2em 2em;
 }
 
 a, a:link, a:visited, a:active {
@@ -41,9 +41,11 @@ a:hover {
 
 h3 {
     font-family: title;
-    font-size: 10em;
     font-weight: 900;
-    text-align: center;
+}
+
+h5 {
+    font-weight: 900;
 }
 
 .label {
@@ -60,6 +62,7 @@ h3 {
 #title {
     color: black;
     font-size: 1.5em;
+    font-weight: 900;
 }
 
 h1 {
@@ -71,8 +74,4 @@ h1 {
 #questions {
     color: black;
     font-size: 1.5em;
-}
-
-.options {
-    font-size: 23em;
 }
