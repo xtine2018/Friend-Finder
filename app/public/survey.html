@@ -219,8 +219,8 @@
   $('#submitButton').on('click', function(event) {
     event.preventDefault();
     var userInput = {
-      name: $('#userName').val().trim(),
-      photo: $('#userPhoto').val().trim(),
+      name: $('#userName').val(),
+      photo: $('#userPhoto').val(),
       scores:[
         $('#question1').val().trim(),
         $('#question2').val().trim(),
