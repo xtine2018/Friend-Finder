@@ -175,20 +175,22 @@
           <option value="4">Option 4</option>
           <option value="5">Option 5 (Strongly Agree)</option>
     </select>
+  </div>
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="submitButton">Send</a>
+  
+<br>
 
-        <br>
-
-  <a href="*"><button class="btn btn-danger btn-lg"></span>Submit</button></a>
+</div>
+  
+  <!-- <a href="*"><button class="btn btn-danger btn-lg"></span>Submit</button></a> -->
 
   </div>
-
-  </div>
   </div>
 
-<!-- Modal Trigger
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
 
-<!-- Modal Structure -->
+
+
+
   <div id="modal1" class="modal">
       <div class="modal-content">
         <h4>House Match</h4>
@@ -197,14 +199,14 @@
         <img id="userMatchImage" class="materialboxed" width="650" src="">
       </div>
       <div class="modal-footer">
-        <a href="/survey" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="../public/home.html" class="modal-close waves-effect waves-green btn-flat">Agree?</a>
       </div>
     </div>
 
 <script type="text/javascript">
   $(document).ready(function() {
     $('select').formSelect();
-    // M.updateTextFields();
+    M.updateTextFields();
     // $('select').material_select();
     $('.modal').modal({
       dismissible: false, 

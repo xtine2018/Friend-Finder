@@ -29,7 +29,7 @@ a:hover {
     color: gold;
 }
 
-.btn-danger {
+#submitButton {
     font-family: GOT;
     background-color: gold;
     color: black;
